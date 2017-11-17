@@ -5,10 +5,11 @@
     android:orientation="vertical">
 
     <EditText
-        android:layout_margin="100dp"
+
         android:id="@+id/num1"
         android:hint="@string/Enter"
         android:layout_width="match_parent"
+        android:text="1234"
         android:layout_height="wrap_content" />
 
     <EditText
@@ -16,32 +17,47 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/Enter"
-        android:text=""
+        android:text="3456"
         />
-
-    <Rockets>
-        <Rocket vx="1.2f" vy="0"/>
-        <Rocket vx="1.2f" vy="0"/>
-    </Rockets>
 
     <TextView
         android:id="@+id/out"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="4096"
+        android:textSize="30dp"
         />
 
     <Button
-        android:layout_width="40dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="right"
         android:onClick="plus"
         android:text="@string/plus" />
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:onClick="minus"
         android:text="@string/minus" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:onClick="plus"
+        android:text="*" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:onClick="minus"
+        android:text="/" />
 
 
 </LinearLayout>
